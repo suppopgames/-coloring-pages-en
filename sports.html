@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<!-- ====================================================== -->
+<!-- | CHANGE 1: Language and Direction                   | -->
+<!-- ====================================================== -->
+<html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6RQ2QSS8PZ');
-</script>
+    <!-- Google Analytics tag remains the same -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6RQ2QSS8PZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>עולם הצביעה של ארי וניר - ספורט</title>
 
-    <!-- ======== שדרוג 2: תיאור למנועי חיפוש ======== -->
-    <meta name="description" content="אוהבים ספורט? בואו לצבוע את רונאלדו, שחקני כדורסל, טניס ועוד. דפי צביעה של ספורט להדפסה בחינם באתר של ארי וניר.">
+    <!-- ====================================================== -->
+    <!-- | CHANGE 2: SEO Meta Tags for Sports Page            | -->
+    <!-- ====================================================== -->
+    <title>Ari & Nir's Coloring World - Sports Coloring Pages</title>
+    <meta name="description" content="Love sports? Come color soccer players, basketball players, tennis stars, and more. Free printable sports coloring pages at Ari & Nir's Coloring World.">
 
-    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <!-- Font Awesome library link remains the same -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- ======== קוד העיצוב (CSS) מועתק מהעמוד הראשי ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 3: CSS (Identical to other pages)           | -->
+    <!-- ====================================================== -->
     <style>
-        /* כל קוד ה-CSS שהיה לנו נמצא כאן... */
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         :root {
             --primary-color: #29b6f6;
@@ -33,8 +38,8 @@
             --white-color: #ffffff;
         }
         html {
-            font-size: 16px; /* גודל בסיס לחישוב יחידות rem */
-            scroll-behavior: smooth; /* לגלילה חלקה עם כפתור "חזרה למעלה" */
+            font-size: 16px;
+            scroll-behavior: smooth;
         }
         body {
             font-family: 'Varela Round', sans-serif;
@@ -178,12 +183,9 @@
             border-radius: 8px;
             transition: background-color 0.3s;
         }
-        .sidebar ul li.active a {
+        .sidebar ul li.active a, .sidebar ul li a:hover {
             background-color: #e0f7fa;
             font-weight: bold;
-        }
-         .sidebar ul li a:hover{
-            background-color: #e0f7fa;
         }
         footer {
             text-align: center;
@@ -213,7 +215,6 @@
         .footer-socials a:hover {
             color: var(--primary-color);
         }
-        
         .modal {
           display: none; 
           position: fixed; 
@@ -256,12 +257,10 @@
           text-decoration: none;
           cursor: pointer;
         }
-        
-        /* --- עיצוב חדש לנגישות --- */
         .accessibility-toolbar {
             position: fixed;
             bottom: 20px;
-            right: 20px; /* תוקן לצד ימין */
+            right: 20px;
             z-index: 1001;
         }
         #accessibility-btn {
@@ -282,7 +281,7 @@
             display: none;
             position: absolute;
             bottom: 70px;
-            right: 0; /* תוקן לצד ימין */
+            right: 0;
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -294,7 +293,7 @@
             align-items: center;
             gap: 10px;
             width: 100%;
-            text-align: right;
+            text-align: left;
             margin-bottom: 10px;
             padding: 10px;
             font-size: 1rem;
@@ -328,14 +327,11 @@
         body.readable-font {
             font-family: Arial, sans-serif !important;
         }
-        /* --- סוף עיצוב נגישות --- */
-        
-        /* --- שדרוג 3: עיצוב כפתור חזרה למעלה --- */
         #back-to-top-btn {
             display: none;
             position: fixed;
-            bottom: 90px; /* מרווח מתפריט הנגישות */
-            right: 20px; /* תוקן לצד ימין */
+            bottom: 90px;
+            right: 20px;
             z-index: 99;
             border: none;
             outline: none;
@@ -352,7 +348,6 @@
         #back-to-top-btn:hover {
             background-color: #e65100;
         }
-
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -365,108 +360,117 @@
 </head>
 <body>
     
+    <!-- ====================================================== -->
+    <!-- | CHANGE 4: Header Content Translation               | -->
+    <!-- ====================================================== -->
     <header>
-        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
-        <p>גלו עולם שבו כל דף צביעה הופך לסיפור אישי וקסום.</p>
-        
+        <h1><a href="index.html">Ari & Nir's Coloring World ✨</a></h1>
+        <p>Discover a world where every coloring page becomes a magical story.</p>
         <nav>
-            <a href="index.html">עמוד הבית</a> |
-            <a href="animals.html">חיות</a> |
-            <a href="vehicles.html">כלי רכב</a> |
-            <strong>ספורט</strong> |
-            <a href="cartoons.html">דמויות מצוירות</a>
+            <a href="index.html">Home</a> |
+            <a href="animals.html">Animals</a> |
+            <a href="vehicles.html">Vehicles</a> |
+            <strong>Sports</strong> | <!-- Made this bold as it's the active page -->
+            <a href="cartoons.html">Cartoons</a>
         </nav>
     </header>
 
     <div class="container">
+        <!-- ====================================================== -->
+        <!-- | CHANGE 5: Main Content Translation for Sports      | -->
+        <!-- ====================================================== -->
         <div class="main-content">
             <main class="content-box">
-                <h2>קטגוריה: ספורט ⚽</h2>
-                <p>כדורגל, כדורסל, ועוד המון ענפי ספורט שווים! כל הדפים הכי ספורטיביים מחכים לכם כאן, במיוחד לארי!</p>
+                <h2>Category: Sports ⚽</h2>
+                <p>Soccer, basketball, and many more cool sports! All the most athletic pages are waiting for you here, especially for Ari!</p>
                 <div class="gallery-grid">
-                    <!-- דף 1 -->
+                    <!-- Card 1 -->
                     <div class="coloring-card">
-                        <img src="images/ronaldo_shoot.png" alt="דף צביעה של רונאלדו" class="image-popup">
-                        <h3>רונאלדו בועט בכדור</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="כריסטיאנו רונאלדו מבקיע שער ניצחון במשחק חשוב">✨ המצא לי סיפור</button>
+                        <img src="images/ronaldo_shoot.png" alt="Coloring page of a soccer player" class="image-popup">
+                        <h3>Soccer Player Kicking</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a famous soccer player scoring the winning goal in an important match">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 2 -->
+                    <!-- Card 2 -->
                     <div class="coloring-card">
-                        <img src="images/basketball-player.png" alt="שחקן כדורסל מטביע" class="image-popup">
-                        <h3>שחקן כדורסל</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="שחקן כדורסל שמטביע לסל בהתלהבות">✨ המצא לי סיפור</button>
+                        <img src="images/basketball-player.png" alt="Basketball player dunking" class="image-popup">
+                        <h3>Basketball Player</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a basketball player dunking the ball with excitement">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 3 -->
+                    <!-- Card 3 -->
                     <div class="coloring-card">
-                        <img src="images/tennis-player.png" alt="שחקנית טניס" class="image-popup">
-                        <h3>שחקנית טניס</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="שחקנית טניס שמכה כדור הגשה חזק">✨ המצא לי סיפור</button>
+                        <img src="images/tennis-player.png" alt="Tennis player" class="image-popup">
+                        <h3>Tennis Player</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a tennis player hitting a powerful serve">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 4 -->
+                    <!-- Card 4 -->
                     <div class="coloring-card">
-                        <img src="images/swimmer.png" alt="שחיין אולימפי" class="image-popup">
-                        <h3>שחיין אולימפי</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="שחיין מהיר ששובר שיא בבריכה האולימפית">✨ המצא לי סיפור</button>
+                        <img src="images/swimmer.png" alt="Olympic swimmer" class="image-popup">
+                        <h3>Olympic Swimmer</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a fast swimmer breaking a record in the olympic pool">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 5 -->
+                    <!-- Card 5 -->
                     <div class="coloring-card">
-                        <img src="images/baseball-player.png" alt="שחקן בייסבול" class="image-popup">
-                        <h3>שחקן בייסבול</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="שחקן בייסבול שחובט בכדור ועושה הום-ראן">✨ המצא לי סיפור</button>
+                        <img src="images/baseball-player.png" alt="Baseball player" class="image-popup">
+                        <h3>Baseball Player</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a baseball player hitting a home run">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 6 -->
+                    <!-- Card 6 -->
                     <div class="coloring-card">
-                        <img src="images/gymnast.png" alt="מתעמלת אמנותית" class="image-popup">
-                        <h3>מתעמלת אמנותית</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="מתעמלת אמנותית שעושה סלטה באוויר">✨ המצא לי סיפור</button>
+                        <img src="images/gymnast.png" alt="Artistic gymnast" class="image-popup">
+                        <h3>Artistic Gymnast</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="an artistic gymnast doing a somersault in the air">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 7 -->
+                    <!-- Card 7 -->
                     <div class="coloring-card">
-                        <img src="images/skater.png" alt="סקייטר בפארק" class="image-popup">
-                        <h3>סקייטר בפארק</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="סקייטר שמבצע תרגיל קפיצה מדהים בפארק">✨ המצא לי סיפור</button>
+                        <img src="images/skater.png" alt="Skater in the park" class="image-popup">
+                        <h3>Skater in the Park</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a skater performing an amazing jump trick at the park">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
-                    <!-- דף 8 -->
+                    <!-- Card 8 -->
                     <div class="coloring-card">
-                        <img src="images/karate-kid.png" alt="ילד בחוג קראטה" class="image-popup">
-                        <h3>ילד בחוג קראטה</h3>
-                        <button class="btn btn-primary print-btn">הדפס אותי</button>
-                        <button class="btn btn-secondary generate-story-btn" data-subject="ילד עם חגורה צהובה שלומד תנועת קראטה חדשה">✨ המצא לי סיפור</button>
+                        <img src="images/karate-kid.png" alt="Kid in karate class" class="image-popup">
+                        <h3>Kid in Karate Class</h3>
+                        <button class="btn btn-primary print-btn">Print Me</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="a kid with a yellow belt learning a new karate move">✨ Create a Story</button>
                         <div class="story-output"></div>
                     </div>
                 </div>
             </main>
         </div>
 
+        <!-- ====================================================== -->
+        <!-- | CHANGE 6: Sidebar Content Translation              | -->
+        <!-- ====================================================== -->
         <aside class="sidebar">
-            <h3>כל הקטגוריות</h3>
+            <h3>All Categories</h3>
             <ul>
-                <li><a href="animals.html"><span>🐾</span> חיות</a></li>
-                <li><a href="vehicles.html"><span>🚗</span> כלי רכב</a></li>
-                <li class="active"><a href="sports.html"><span>⚽</span> ספורט (לארי!)</a></li>
-                <li><a href="cartoons.html"><span>📺</span> דמויות מצוירות (לניר!)</a></li>
-                <li><a href="dinosaurs.html"><span>🦖</span> דינוזאורים</a></li>
-                <li><a href="princesses.html"><span>👑</span> נסיכות ופיות</a></li>
-                <li><a href="superheroes.html"><span>🦸</span> גיבורי על</a></li>
-                <li><a href="fantasy.html"><span>🦄</span> פנטזיה וקסם</a></li>
-                <li><a href="food.html"><span>🍕</span> אוכל טעים</a></li>
-                <li><a href="nature.html"><span>🍂</span> טבע ועונות השנה</a></li>
-                <li><a href="mandalas.html"><span>🎨</span> מנדלות וצורות</a></li>
-                <li><a href="holidays.html"><span>🕎</span> חגים ומועדים</a></li>
+                <!-- The 'active' class will be added by the JS at the bottom -->
+                <li><a href="animals.html"><span>🐾</span> Animals</a></li>
+                <li><a href="vehicles.html"><span>🚗</span> Vehicles</a></li>
+                <li><a href="sports.html"><span>⚽</span> Sports (for Ari!)</a></li>
+                <li><a href="cartoons.html"><span>📺</span> Cartoons (for Nir!)</a></li>
+                <li><a href="dinosaurs.html"><span>🦖</span> Dinosaurs</a></li>
+                <li><a href="princesses.html"><span>👑</span> Princesses & Fairies</a></li>
+                <li><a href="superheroes.html"><span>🦸</span> Superheroes</a></li>
+                <li><a href="fantasy.html"><span>🦄</span> Fantasy & Magic</a></li>
+                <li><a href="food.html"><span>🍕</span> Yummy Food</a></li>
+                <li><a href="nature.html"><span>🍂</span> Nature & Seasons</a></li>
+                <li><a href="mandalas.html"><span>🎨</span> Mandalas & Shapes</a></li>
+                <li><a href="holidays.html"><span><i class="fa-solid fa-tree"></i></span> Holidays</a></li>
             </ul>
         </aside>
     </div>
@@ -476,62 +480,69 @@
       <img class="modal-content" id="modalImage">
     </div>
 
-    <!-- ======== תפריט נגישות ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 7: Accessibility Menu Translation           | -->
+    <!-- ====================================================== -->
     <div class="accessibility-toolbar">
         <div id="accessibility-menu">
-            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> הגדל טקסט</button>
-            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> הקטן טקסט</button>
-            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות גבוהה</button>
-            <button id="toggle-links"><i class="fa-solid fa-link"></i> הדגש קישורים</button>
-            <button id="toggle-font"><i class="fa-solid fa-font"></i> גופן קריא</button>
-            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> אפס הגדרות</button>
+            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> Increase Text</button>
+            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> Decrease Text</button>
+            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> High Contrast</button>
+            <button id="toggle-links"><i class="fa-solid fa-link"></i> Highlight Links</button>
+            <button id="toggle-font"><i class="fa-solid fa-font"></i> Readable Font</button>
+            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> Reset Settings</button>
         </div>
-        <button id="accessibility-btn" title="תפריט נגישות">
+        <button id="accessibility-btn" title="Accessibility Menu">
             <i class="fa-solid fa-universal-access"></i>
         </button>
     </div>
 
-    <!-- ======== שדרוג 3: כפתור חזרה למעלה ======== -->
-    <button id="back-to-top-btn" title="חזרה למעלה"><i class="fa-solid fa-arrow-up"></i></button>
+    <button id="back-to-top-btn" title="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
+    <!-- ====================================================== -->
+    <!-- | CHANGE 8: Footer Content Translation               | -->
+    <!-- ====================================================== -->
     <footer>
         <div class="footer-links">
-            <a href="about.html">אודות</a> |
-            <a href="privacy.html">מדיניות פרטיות</a> |
-            <a href="mailto:suppopgames@gmail.com">צרו קשר</a>
+            <a href="about.html">About Us</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="mailto:suppopgames@gmail.com">Contact Us</a>
         </div>
         <div class="footer-socials">
-            <a href="#" title="פייסבוק"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" title="אינסטגרם"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" title="טיקטוק"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" title="פינטרסט"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
-        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+        <p>&copy; 2025 Ari & Nir's Coloring World. All Rights Reserved.</p>
     </footer>
 
+    <!-- ====================================================== -->
+    <!-- | CHANGE 9: JavaScript Translation & Comments        | -->
+    <!-- ====================================================== -->
     <script type="module">
         // JavaScript for Gemini, Print, Stories, Modal
         async function callGemini(prompt, outputElement, loadingMessage) {
-            outputElement.innerText = loadingMessage || 'חושב על משהו מדהים...';
+            outputElement.innerText = loadingMessage || 'Thinking of something amazing...';
             const apiKey = "AIzaSyBq5yzvc9ljR84lA4vEBXCf0xn9nGu0TQk"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }] };
             try {
                 const response = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
-                if (!response.ok) throw new Error(`שגיאת API: ${response.statusText}`);
+                if (!response.ok) throw new Error(`API Error: ${response.statusText}`);
                 const result = await response.json();
                 if (result.candidates && result.candidates[0].content && result.candidates[0].content.parts) {
                     outputElement.innerText = result.candidates[0].content.parts[0].text;
-                } else { throw new Error("תשובה לא צפויה מה-API."); }
+                } else { throw new Error("Unexpected response from API."); }
             } catch (error) {
-                console.error("שגיאה בקריאה ל-Gemini:", error);
-                outputElement.innerText = 'אוי, משהו השתבש. נסו שוב.';
+                console.error("Error calling Gemini:", error);
+                outputElement.innerText = 'Oops, something went wrong. Please try again.';
             }
         }
 
         function printImage(imageUrl) {
             const printWindow = window.open('', '_blank');
-            printWindow.document.write(`<html><head><title>הדפסת דף צביעה</title><style>body { margin: 0; padding: 0; text-align: center; } img { max-width: 100%; max-height: 95vh; }</style></head><body><img src="${imageUrl}" onload="window.print(); window.close();" /></body></html>`);
+            printWindow.document.write(`<html><head><title>Print Coloring Page</title><style>body { margin: 0; padding: 0; text-align: center; } img { max-width: 100%; max-height: 95vh; }</style></head><body><img src="${imageUrl}" onload="window.print(); window.close();" /></body></html>`);
             printWindow.document.close();
         }
 
@@ -540,8 +551,8 @@
                 const card = event.target.closest('.coloring-card');
                 const storyOutput = card.querySelector('.story-output');
                 const imageSubject = event.target.dataset.subject;
-                const prompt = `כתוב סיפור קצרצר (2-3 משפטים) וקסום לילדים על ${imageSubject}. הסיפור צריך להיות שמח, חיובי ומעורר דמיון.`;
-                callGemini(prompt, storyOutput, 'רוקם סיפור קסום...');
+                const prompt = `Write a very short (2-3 sentences), magical story for kids about ${imageSubject}. The story should be happy, positive, and spark imagination.`;
+                callGemini(prompt, storyOutput, 'Weaving a magical tale...');
             });
         });
 
@@ -577,7 +588,7 @@
         }
     </script>
     
-    <!-- ======== קוד JavaScript חדש להפעלת הנגישות ======== -->
+    <!-- JavaScript for Accessibility Features & Active Page Highlight -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const accessibilityBtn = document.getElementById('accessibility-btn');
@@ -592,60 +603,45 @@
             const body = document.body;
             const html = document.documentElement;
 
-            // פתיחה וסגירה של תפריט הנגישות
             if (accessibilityBtn) {
                 accessibilityBtn.addEventListener('click', function() {
                     const isDisplayed = accessibilityMenu.style.display === 'block';
                     accessibilityMenu.style.display = isDisplayed ? 'none' : 'block';
                 });
             }
-
-            // הגדלת טקסט
             if (increaseTextBtn) {
                 increaseTextBtn.addEventListener('click', function() {
                     let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
                     html.style.fontSize = (currentSize * 1.1) + 'px';
                 });
             }
-
-            // הקטנת טקסט
             if (decreaseTextBtn) {
                 decreaseTextBtn.addEventListener('click', function() {
                     let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
                     html.style.fontSize = (currentSize * 0.9) + 'px';
                 });
             }
-
-            // ניגודיות גבוהה
             if (toggleContrastBtn) {
                 toggleContrastBtn.addEventListener('click', function() {
                     body.classList.toggle('high-contrast');
                 });
             }
-
-            // הדגשת קישורים
             if (toggleLinksBtn) {
                 toggleLinksBtn.addEventListener('click', function() {
                     body.classList.toggle('highlight-links');
                 });
             }
-
-            // גופן קריא
             if (toggleFontBtn) {
                 toggleFontBtn.addEventListener('click', function() {
                     body.classList.toggle('readable-font');
                 });
             }
-
-            // איפוס הגדרות
             if (resetSettingsBtn) {
                 resetSettingsBtn.addEventListener('click', function() {
-                    html.style.fontSize = ''; // חזרה לגודל המקורי
+                    html.style.fontSize = '';
                     body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
                 });
             }
-
-            // --- שדרוג 3: קוד לכפתור חזרה למעלה ---
             if(backToTopBtn) {
                 window.onscroll = function() {
                     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -654,13 +650,12 @@
                         backToTopBtn.style.display = "none";
                     }
                 };
-
                 backToTopBtn.addEventListener('click', function() {
                     window.scrollTo({top: 0, behavior: 'smooth'});
                 });
             }
 
-            // --- שדרוג 1: קוד להדגשת עמוד פעיל ---
+            // Code to highlight the active page in the sidebar
             const currentPage = window.location.pathname.split("/").pop();
             const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
             sidebarLinks.forEach(link => {
@@ -668,7 +663,6 @@
                     link.parentElement.classList.add('active');
                 }
             });
-
         });
     </script>
 

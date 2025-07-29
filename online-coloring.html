@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<!-- ====================================================== -->
+<!-- | CHANGE 1: Language and Direction                   | -->
+<!-- ====================================================== -->
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>צביעה אונליין - עולם הצביעה של ארי וניר</title>
+    
+    <!-- ====================================================== -->
+    <!-- | CHANGE 2: SEO Meta Tags for Online Coloring Page   | -->
+    <!-- ====================================================== -->
+    <title>Online Coloring - Ari & Nir's Coloring World</title>
+    <meta name="description" content="Color online directly on our website! Choose a page, pick your colors, and use the paint bucket tool to create your masterpiece. Free and fun for all ages.">
 
-    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <!-- Font Awesome library link remains the same -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- ======== קוד העיצוב (CSS) ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 3: CSS Translation & Adjustments            | -->
+    <!-- ====================================================== -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         :root {
@@ -41,6 +51,7 @@
             justify-content: center;
             padding: 20px;
             gap: 20px;
+            align-items: flex-start; /* Align items to the top */
         }
         #canvas-container {
             border: 5px solid white;
@@ -51,7 +62,7 @@
         }
         canvas {
             display: block;
-            /* שדרוג: סמן מכחול עם קצה מדויק */
+            /* The cursor SVG is language-neutral and works for LTR */
             cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M22.42,6.58,5,24,3,29l5-2,17.42-17.42a4,4,0,0,0,0-5.66L28.08,1a4,4,0,0,0-5.66,0Z" fill="%23666" stroke="white" stroke-width="1.5"/></svg>') 0 32, auto;
             max-width: 100%;
             height: auto;
@@ -61,6 +72,7 @@
             flex-direction: column;
             gap: 20px;
             width: 300px;
+            min-width: 300px;
         }
         .tool-box {
             background-color: white;
@@ -95,6 +107,20 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: var(--accent-color);
+            color: white;
+        }
+        .action-buttons button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
         .image-gallery {
             display: grid;
@@ -117,52 +143,67 @@
             margin-top: 20px;
             background-color: #e9ecef;
         }
+
+        @media (max-width: 900px) {
+            .coloring-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
     
+    <!-- ====================================================== -->
+    <!-- | CHANGE 4: Header Content Translation               | -->
+    <!-- ====================================================== -->
     <header>
-        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
-        <p>צביעה אונליין!</p>
+        <h1><a href="index.html">Ari & Nir's Coloring World ✨</a></h1>
+        <p>Online Coloring!</p>
     </header>
 
     <div class="coloring-container">
+        <!-- ====================================================== -->
+        <!-- | CHANGE 5: Tools and Gallery Translation & Fixes    | -->
+        <!-- ====================================================== -->
         <div class="tools-container">
             <div class="tool-box">
-                <h3>1. בחר דף צביעה</h3>
+                <h3>1. Choose a Page</h3>
                 <div class="image-gallery">
-                    <img src="images/cute_lion.png" data-src="images/cute_lion.png" alt="אריה" class="gallery-thumb selected">
-                    <img src="images/friendly-dragon.png" data-src="images/friendly-dragon.png" alt="דרקון" class="gallery-thumb">
-                    <img src="images/cool_spaceship.png" data-src="images/cool_spaceship.png" alt="חללית" class="gallery-thumb">
-                    <img src="images/ronaldo_shoot.png" data-src="images/ronaldo_shoot.png" alt="רונאלדו" class="gallery-thumb">
-                    <img src="images/princess-castle.png" data-src="images/princess-castle.png" alt="נסיכה" class="gallery-thumb">
-                    <img src="images/superman-flying.png" data-src="images/superman-flying.png" alt="סופרמן" class="gallery-thumb">
-                    <img src="images/pizza-slice.png" data-src="images/pizza-slice.png" alt="פיצה" class="gallery-thumb">
-                    <img src="images/winter-snowman.png" data-src="images/winter-snowman.png" alt="איש שלג" class="gallery-thumb">
-                    <img src="images/mandala-sun.png" data-src="images/mandala-sun.png" alt="מנדלה" class="gallery-thumb">
+                    <img src="images/cute_lion.png" data-src="images/cute_lion.png" alt="Lion" class="gallery-thumb selected">
+                    <img src="images/friendly-dragon.png" data-src="images/friendly-dragon.png" alt="Dragon" class="gallery-thumb">
+                    <img src="images/cool_spaceship.png" data-src="images/cool_spaceship.png" alt="Spaceship" class="gallery-thumb">
+                    <!-- REVERTED: Changed filename back to original -->
+                    <img src="images/ronaldo_shoot.png" data-src="images/ronaldo_shoot.png" alt="Soccer Player" class="gallery-thumb">
+                    <img src="images/princess-castle.png" data-src="images/princess-castle.png" alt="Princess" class="gallery-thumb">
+                    <!-- REVERTED: Changed filename back to original -->
+                    <img src="images/superman-flying.png" data-src="images/superman-flying.png" alt="Flying Hero" class="gallery-thumb">
+                    <img src="images/pizza-slice.png" data-src="images/pizza-slice.png" alt="Pizza" class="gallery-thumb">
+                    <img src="images/winter-snowman.png" data-src="images/winter-snowman.png" alt="Snowman" class="gallery-thumb">
+                    <img src="images/mandala-sun.png" data-src="images/mandala-sun.png" alt="Mandala" class="gallery-thumb">
                 </div>
             </div>
             <div class="tool-box">
-                <h3>2. בחר צבע</h3>
+                <h3>2. Pick a Color</h3>
                 <div class="color-palette">
-                    <!-- שורה 1 -->
-                    <div class="color-box selected" style="background-color: #FF0000;" data-color="#FF0000"></div>
-                    <div class="color-box" style="background-color: #0000FF;" data-color="#0000FF"></div>
-                    <div class="color-box" style="background-color: #FFFF00;" data-color="#FFFF00"></div>
-                    <div class="color-box" style="background-color: #008000;" data-color="#008000"></div>
-                    <div class="color-box" style="background-color: #FFA500;" data-color="#FFA500"></div>
-                    <!-- שורה 2 -->
-                    <div class="color-box" style="background-color: #800080;" data-color="#800080"></div>
-                    <div class="color-box" style="background-color: #FFC0CB;" data-color="#FFC0CB"></div>
-                    <div class="color-box" style="background-color: #A52A2A;" data-color="#A52A2A"></div>
-                    <div class="color-box" style="background-color: #000000;" data-color="#000000"></div>
-                    <div class="color-box" style="background-color: #FFFFFF; border: 1px solid #ccc;" data-color="#FFFFFF"></div>
+                    <!-- Row 1 -->
+                    <div class="color-box selected" style="background-color: #FF0000;" data-color="#FF0000" title="Red"></div>
+                    <div class="color-box" style="background-color: #0000FF;" data-color="#0000FF" title="Blue"></div>
+                    <div class="color-box" style="background-color: #FFFF00;" data-color="#FFFF00" title="Yellow"></div>
+                    <div class="color-box" style="background-color: #008000;" data-color="#008000" title="Green"></div>
+                    <div class="color-box" style="background-color: #FFA500;" data-color="#FFA500" title="Orange"></div>
+                    <!-- Row 2 -->
+                    <div class="color-box" style="background-color: #800080;" data-color="#800080" title="Purple"></div>
+                    <div class="color-box" style="background-color: #FFC0CB;" data-color="#FFC0CB" title="Pink"></div>
+                    <div class="color-box" style="background-color: #A52A2A;" data-color="#A52A2A" title="Brown"></div>
+                    <div class="color-box" style="background-color: #000000;" data-color="#000000" title="Black"></div>
+                    <div class="color-box" style="background-color: #FFFFFF; border: 1px solid #ccc;" data-color="#FFFFFF" title="White"></div>
                 </div>
             </div>
             <div class="tool-box action-buttons">
-                <h3>3. פעולות</h3>
-                <button id="clear-btn"><i class="fa-solid fa-eraser"></i> נקה ציור</button>
-                <button id="download-btn"><i class="fa-solid fa-download"></i> הורד יצירה</button>
+                <h3>3. Actions</h3>
+                <button id="clear-btn"><i class="fa-solid fa-eraser"></i> Clear Drawing</button>
+                <button id="download-btn"><i class="fa-solid fa-download"></i> Download Artwork</button>
             </div>
         </div>
         <div id="canvas-container">
@@ -170,163 +211,186 @@
         </div>
     </div>
     
+    <!-- ====================================================== -->
+    <!-- | CHANGE 6: Footer Translation                       | -->
+    <!-- ====================================================== -->
     <footer>
-        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+        <p>© 2025 Ari & Nir's Coloring World. All Rights Reserved.</p>
     </footer>
 
+    <!-- ====================================================== -->
+    <!-- | CHANGE 7: JavaScript Translation & Comments        | -->
+    <!-- ====================================================== -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const canvas = document.getElementById('coloringCanvas');
-            const ctx = canvas.getContext('2d', { willReadFrequently: true });
-            const palette = document.querySelector('.color-palette');
-            const gallery = document.querySelector('.image-gallery');
-            const clearBtn = document.getElementById('clear-btn');
-            const downloadBtn = document.getElementById('download-btn');
+            console.log("Online coloring script started.");
 
-            let selectedColor = '#FF0000';
-            const image = new Image();
-            image.crossOrigin = "Anonymous"; 
+            try {
+                const canvas = document.getElementById('coloringCanvas');
+                if (!canvas) {
+                    console.error("Fatal Error: Canvas element with ID 'coloringCanvas' was not found.");
+                    return;
+                }
+                const ctx = canvas.getContext('2d', { willReadFrequently: true });
+                const palette = document.querySelector('.color-palette');
+                const gallery = document.querySelector('.image-gallery');
+                const clearBtn = document.getElementById('clear-btn');
+                const downloadBtn = document.getElementById('download-btn');
 
-            function loadImage(src) {
-                image.src = src;
-                image.onload = () => {
-                    canvas.width = image.width;
-                    canvas.height = image.height;
-                    drawImage();
-                };
-                image.onerror = () => {
+                let selectedColor = '#FF0000';
+                const image = new Image();
+                image.crossOrigin = "Anonymous";
+
+                function loadImage(src) {
+                    console.log("Attempting to load image:", src);
+                    image.src = src;
+                    image.onload = () => {
+                        console.log("Image loaded successfully:", src);
+                        canvas.width = image.naturalWidth;
+                        canvas.height = image.naturalHeight;
+                        drawImage();
+                    };
+                    image.onerror = () => {
+                        console.error("Failed to load image:", src);
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        ctx.font = "20px Varela Round";
+                        ctx.textAlign = "center";
+                        ctx.fillText("Could not load image.", canvas.width / 2, canvas.height / 2);
+                    }
+                }
+
+                function drawImage() {
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.font = "20px Varela Round";
-                    ctx.textAlign = "center";
-                    ctx.fillText("לא ניתן היה לטעון את התמונה.", canvas.width / 2, canvas.height / 2);
+                    ctx.drawImage(image, 0, 0);
+                    console.log("Image drawn on canvas.");
                 }
-            }
 
-            function drawImage() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.drawImage(image, 0, 0);
-            }
+                gallery.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('gallery-thumb')) {
+                        const newSrc = e.target.dataset.src;
+                        loadImage(newSrc);
+                        document.querySelectorAll('.gallery-thumb').forEach(thumb => thumb.classList.remove('selected'));
+                        e.target.classList.add('selected');
+                    }
+                });
 
-            gallery.addEventListener('click', (e) => {
-                if (e.target.classList.contains('gallery-thumb')) {
-                    const newSrc = e.target.dataset.src;
-                    loadImage(newSrc);
-                    document.querySelectorAll('.gallery-thumb').forEach(thumb => thumb.classList.remove('selected'));
-                    e.target.classList.add('selected');
-                }
-            });
+                palette.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('color-box')) {
+                        selectedColor = e.target.dataset.color;
+                        document.querySelectorAll('.color-box').forEach(box => box.classList.remove('selected'));
+                        e.target.classList.add('selected');
+                    }
+                });
 
-            palette.addEventListener('click', (e) => {
-                if (e.target.classList.contains('color-box')) {
-                    selectedColor = e.target.dataset.color;
-                    document.querySelectorAll('.color-box').forEach(box => box.classList.remove('selected'));
-                    e.target.classList.add('selected');
-                }
-            });
-
-            canvas.addEventListener('click', (e) => {
-                const rect = canvas.getBoundingClientRect();
-                const scaleX = canvas.width / rect.width;
-                const scaleY = canvas.height / rect.height;
-                const x = Math.floor((e.clientX - rect.left) * scaleX);
-                const y = Math.floor((e.clientY - rect.top) * scaleY);
-                
-                floodFill(x, y, hexToRgb(selectedColor));
-            });
-
-            clearBtn.addEventListener('click', drawImage);
-
-            downloadBtn.addEventListener('click', () => {
-                const link = document.createElement('a');
-                link.download = 'my-coloring-page.png';
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            });
-
-            function floodFill(startX, startY, fillColor) {
-                try {
-                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                    const startPos = (startY * canvas.width + startX) * 4;
-                    const startR = imageData.data[startPos];
-                    const startG = imageData.data[startPos + 1];
-                    const startB = imageData.data[startPos + 2];
-
-                    if (fillColor.r === startR && fillColor.g === startG && fillColor.b === startB) return;
+                canvas.addEventListener('click', (e) => {
+                    const rect = canvas.getBoundingClientRect();
+                    const scaleX = canvas.width / rect.width;
+                    const scaleY = canvas.height / rect.height;
+                    const x = Math.floor((e.clientX - rect.left) * scaleX);
+                    const y = Math.floor((e.clientY - rect.top) * scaleY);
                     
-                    const pixelStack = [[startX, startY]];
+                    floodFill(x, y, hexToRgb(selectedColor));
+                });
 
-                    while (pixelStack.length) {
-                        const newPos = pixelStack.pop();
-                        const x = newPos[0];
-                        let y = newPos[1];
-                        let pixelPos = (y * canvas.width + x) * 4;
+                clearBtn.addEventListener('click', drawImage);
 
-                        while (y-- >= 0 && matchStartColor(pixelPos, startR, startG, startB, imageData)) {
-                            pixelPos -= canvas.width * 4;
-                        }
-                        pixelPos += canvas.width * 4;
-                        ++y;
+                downloadBtn.addEventListener('click', () => {
+                    const link = document.createElement('a');
+                    link.download = 'my-masterpiece.png';
+                    link.href = canvas.toDataURL('image/png');
+                    link.click();
+                });
 
-                        let reachLeft = false;
-                        let reachRight = false;
-                        while (y++ < canvas.height - 1 && matchStartColor(pixelPos, startR, startG, startB, imageData)) {
-                            colorPixel(pixelPos, fillColor, imageData);
+                function floodFill(startX, startY, fillColor) {
+                    try {
+                        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                        const startPos = (startY * canvas.width + startX) * 4;
+                        const startR = imageData.data[startPos];
+                        const startG = imageData.data[startPos + 1];
+                        const startB = imageData.data[startPos + 2];
 
-                            if (x > 0) {
-                                if (matchStartColor(pixelPos - 4, startR, startG, startB, imageData)) {
-                                    if (!reachLeft) {
-                                        pixelStack.push([x - 1, y]);
-                                        reachLeft = true;
-                                    }
-                                } else if (reachLeft) {
-                                    reachLeft = false;
-                                }
-                            }
+                        if (fillColor.r === startR && fillColor.g === startG && fillColor.b === startB) return;
+                        
+                        const pixelStack = [[startX, startY]];
 
-                            if (x < canvas.width - 1) {
-                                if (matchStartColor(pixelPos + 4, startR, startG, startB, imageData)) {
-                                    if (!reachRight) {
-                                        pixelStack.push([x + 1, y]);
-                                        reachRight = true;
-                                    }
-                                } else if (reachRight) {
-                                    reachRight = false;
-                                }
+                        while (pixelStack.length) {
+                            const newPos = pixelStack.pop();
+                            const x = newPos[0];
+                            let y = newPos[1];
+                            let pixelPos = (y * canvas.width + x) * 4;
+
+                            while (y-- >= 0 && matchStartColor(pixelPos, startR, startG, startB, imageData)) {
+                                pixelPos -= canvas.width * 4;
                             }
                             pixelPos += canvas.width * 4;
+                            ++y;
+
+                            let reachLeft = false;
+                            let reachRight = false;
+                            while (y++ < canvas.height - 1 && matchStartColor(pixelPos, startR, startG, startB, imageData)) {
+                                colorPixel(pixelPos, fillColor, imageData);
+
+                                if (x > 0) {
+                                    if (matchStartColor(pixelPos - 4, startR, startG, startB, imageData)) {
+                                        if (!reachLeft) {
+                                            pixelStack.push([x - 1, y]);
+                                            reachLeft = true;
+                                        }
+                                    } else if (reachLeft) {
+                                        reachLeft = false;
+                                    }
+                                }
+
+                                if (x < canvas.width - 1) {
+                                    if (matchStartColor(pixelPos + 4, startR, startG, startB, imageData)) {
+                                        if (!reachRight) {
+                                            pixelStack.push([x + 1, y]);
+                                            reachRight = true;
+                                        }
+                                    } else if (reachRight) {
+                                        reachRight = false;
+                                    }
+                                }
+                                pixelPos += canvas.width * 4;
+                            }
                         }
+                        ctx.putImageData(imageData, 0, 0);
+                    } catch (e) {
+                        console.error("Flood fill failed. This can happen if the image is from a different domain without CORS enabled.", e);
                     }
-                    ctx.putImageData(imageData, 0, 0);
-                } catch (e) {
-                    console.error(e);
                 }
-            }
 
-            function matchStartColor(pixelPos, r, g, b, imageData) {
-                const data = imageData.data;
-                const tolerance = 10;
-                return Math.abs(data[pixelPos] - r) <= tolerance &&
-                       Math.abs(data[pixelPos + 1] - g) <= tolerance &&
-                       Math.abs(data[pixelPos + 2] - b) <= tolerance;
-            }
+                function matchStartColor(pixelPos, r, g, b, imageData) {
+                    const data = imageData.data;
+                    const tolerance = 10;
+                    return Math.abs(data[pixelPos] - r) <= tolerance &&
+                        Math.abs(data[pixelPos + 1] - g) <= tolerance &&
+                        Math.abs(data[pixelPos + 2] - b) <= tolerance;
+                }
 
-            function colorPixel(pixelPos, c, imageData) {
-                imageData.data[pixelPos] = c.r;
-                imageData.data[pixelPos + 1] = c.g;
-                imageData.data[pixelPos + 2] = c.b;
-                imageData.data[pixelPos + 3] = 255;
-            }
-            
-            function hexToRgb(hex) {
-                const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-                return result ? {
-                    r: parseInt(result[1], 16),
-                    g: parseInt(result[2], 16),
-                    b: parseInt(result[3], 16)
-                } : null;
-            }
+                function colorPixel(pixelPos, c, imageData) {
+                    imageData.data[pixelPos] = c.r;
+                    imageData.data[pixelPos + 1] = c.g;
+                    imageData.data[pixelPos + 2] = c.b;
+                    imageData.data[pixelPos + 3] = 255;
+                }
+                
+                function hexToRgb(hex) {
+                    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                    return result ? {
+                        r: parseInt(result[1], 16),
+                        g: parseInt(result[2], 16),
+                        b: parseInt(result[3], 16)
+                    } : null;
+                }
 
-            loadImage('images/cute_lion.png');
+                // Load the initial image
+                const initialImageSrc = document.querySelector('.gallery-thumb.selected').dataset.src;
+                loadImage(initialImageSrc);
+
+            } catch (error) {
+                console.error("An unexpected error occurred during script initialization:", error);
+            }
         });
     </script>
 </body>

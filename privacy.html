@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<!-- ====================================================== -->
+<!-- | CHANGE 1: Language and Direction                   | -->
+<!-- ====================================================== -->
+<html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6RQ2QSS8PZ');
-</script>
+    <!-- Google Analytics tag remains the same -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6RQ2QSS8PZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>מדיניות פרטיות - עולם הצביעה של ארי וניר</title>
 
-    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 2: SEO Meta Tags for Privacy Policy Page    | -->
+    <!-- ====================================================== -->
+    <title>Privacy Policy - Ari & Nir's Coloring World</title>
+    <meta name="description" content="Your privacy is important to us. Read the privacy policy for Ari & Nir's Coloring World to understand what information we collect and how we use it.">
+
+    <!-- Font Awesome library link remains the same -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- ======== קוד העיצוב (CSS) מועתק מהעמוד הראשי ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 3: CSS Translation & LTR Adjustments        | -->
+    <!-- ====================================================== -->
     <style>
-        /* כל קוד ה-CSS שהיה לנו נמצא כאן... */
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         :root {
             --primary-color: #29b6f6;
@@ -30,7 +38,7 @@
             --white-color: #ffffff;
         }
         html {
-            font-size: 16px; /* גודל בסיס לחישוב יחידות rem */
+            font-size: 16px;
         }
         body {
             font-family: 'Varela Round', sans-serif;
@@ -47,7 +55,7 @@
             gap: 20px;
         }
         .main-content {
-            flex: 1; /* Make main content take full width on this page */
+            flex: 1; /* Make main content take full width */
         }
         header {
             text-align: center;
@@ -63,7 +71,7 @@
         }
         header h1 {
              margin: 0;
-             font-size: 2.5rem;
+             font-size: 2.5em;
         }
         header nav a, header nav strong {
             color: var(--text-color);
@@ -96,7 +104,7 @@
             line-height: 1.8;
         }
         .policy-content ul {
-            padding-right: 20px;
+            padding-left: 20px; /* CSS FIX: Changed from padding-right for LTR */
         }
         footer {
             text-align: center;
@@ -127,11 +135,10 @@
             color: var(--primary-color);
         }
         
-        /* --- עיצוב חדש לנגישות --- */
         .accessibility-toolbar {
             position: fixed;
             bottom: 20px;
-            left: 20px;
+            right: 20px; /* CSS FIX: Changed from left to right for LTR consistency */
             z-index: 1001;
         }
         #accessibility-btn {
@@ -152,7 +159,7 @@
             display: none;
             position: absolute;
             bottom: 70px;
-            left: 0;
+            right: 0; /* CSS FIX: Changed from left to right */
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -164,7 +171,7 @@
             align-items: center;
             gap: 10px;
             width: 100%;
-            text-align: right;
+            text-align: left; /* CSS FIX: Changed from right to left */
             margin-bottom: 10px;
             padding: 10px;
             font-size: 1rem;
@@ -198,8 +205,7 @@
         body.readable-font {
             font-family: Arial, sans-serif !important;
         }
-        /* --- סוף עיצוב נגישות --- */
-
+        
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -209,99 +215,111 @@
 </head>
 <body>
     
+    <!-- ====================================================== -->
+    <!-- | CHANGE 4: Header Content Translation               | -->
+    <!-- ====================================================== -->
     <header>
-        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
-        <p>גלו עולם שבו כל דף צביעה הופך לסיפור אישי וקסום.</p>
-        
+        <h1><a href="index.html">Ari & Nir's Coloring World ✨</a></h1>
+        <p>Discover a world where every coloring page becomes a magical story.</p>
         <nav>
-            <a href="index.html">עמוד הבית</a> |
-            <a href="animals.html">חיות</a> |
-            <a href="vehicles.html">כלי רכב</a> |
-            <a href="sports.html">ספורט</a> |
-            <a href="cartoons.html">דמויות מצוירות</a>
+            <a href="index.html">Home</a> |
+            <a href="animals.html">Animals</a> |
+            <a href="vehicles.html">Vehicles</a> |
+            <a href="sports.html">Sports</a> |
+            <a href="cartoons.html">Cartoons</a>
         </nav>
     </header>
 
     <div class="container">
         <div class="main-content">
+            <!-- ====================================================== -->
+            <!-- | CHANGE 5: Main Content Translation for Privacy Page| -->
+            <!-- ====================================================== -->
             <main class="content-box policy-content">
-                <h2>מדיניות פרטיות</h2>
-                <p><strong>תאריך עדכון אחרון: 10 ביולי 2025</strong></p>
-                <p>ברוכים הבאים ל"עולם הצביעה של ארי וניר" ("האתר"). אנו מחויבים להגן על פרטיות המשתמשים שלנו, ובמיוחד על פרטיותם של ילדים. מדיניות זו מתארת איזה מידע אנו אוספים וכיצד אנו משתמשים בו.</p>
+                <h2>Privacy Policy</h2>
+                <p><strong>Last Updated: July 29, 2025</strong></p>
+                <p>Welcome to "Ari & Nir's Coloring World" (the "Website"). We are committed to protecting the privacy of our users, especially children. This policy describes what information we collect and how we use it.</p>
 
-                <h3>איסוף מידע</h3>
-                <p>אנו אוספים שני סוגי מידע:</p>
+                <h3>Information Collection</h3>
+                <p>We collect two types of information:</p>
                 <ul>
-                    <li><strong>מידע שאינו אישי:</strong> כמו רוב האתרים, אנו אוספים מידע שהדפדפן שולח באופן אוטומטי, כגון סוג הדפדפן, סוג המכשיר, ונתונים סטטיסטיים אנונימיים על השימוש באתר. מידע זה עוזר לנו להבין כיצד לשפר את האתר.</li>
-                    <li><strong>מידע אישי:</strong> אנו אוספים מידע אישי רק כאשר אתם מספקים לנו אותו מרצונכם. לדוגמה, אם תיצרו איתנו קשר באמצעות טופס "צור קשר" (שיוקם בעתיד). ההשתתפות בסקרים באתר היא אנונימית לחלוטין.</li>
+                    <li><strong>Non-Personal Information:</strong> Like most websites, we collect information that your browser sends automatically, such as browser type, device type, and anonymous statistical data about website usage. This information helps us understand how to improve the site.</li>
+                    <li><strong>Personal Information:</strong> We only collect personal information when you voluntarily provide it to us. For example, if you contact us through a "Contact Us" form (to be established in the future). Participation in on-site polls is completely anonymous.</li>
                 </ul>
 
-                <h3>שימוש במידע</h3>
-                <p>אנו משתמשים במידע שאנו אוספים אך ורק כדי:</p>
+                <h3>Use of Information</h3>
+                <p>We use the information we collect solely to:</p>
                 <ul>
-                    <li>לשפר ולתחזק את האתר והשירותים שלנו.</li>
-                    <li>להבין אילו תכנים ודפי צביעה הם הפופולריים ביותר.</li>
-                    <li>להשיב לפניות ושאלות שלכם.</li>
+                    <li>Improve and maintain our website and services.</li>
+                    <li>Understand which content and coloring pages are most popular.</li>
+                    <li>Respond to your inquiries and questions.</li>
                 </ul>
 
-                <h3>שירותי צד שלישי</h3>
-                <p>האתר שלנו משתמש בשירותים של צד שלישי כדי לספק חוויה טובה יותר:</p>
+                <h3>Third-Party Services</h3>
+                <p>Our website uses third-party services to provide a better experience:</p>
                 <ul>
-                    <li><strong>Gemini AI (Google):</strong> הפיצ'רים "המצא לי רעיון" ו"המצא לי סיפור" משתמשים במודל הבינה המלאכותית של גוגל, Gemini. כאשר אתם לוחצים על כפתורים אלו, הבקשה (למשל, "סיפור על אריה חמוד") נשלחת לשרתי גוגל כדי לייצר את התשובה. אנו לא שולחים שום מידע אישי המזהה אתכם יחד עם הבקשה.</li>
-                    <li><strong>פרסומות (בעתיד):</strong> אנו עשויים להשתמש בשירותי פרסום כמו Google AdSense. ספקים אלו, כולל גוגל, משתמשים ב"עוגיות" (Cookies) כדי להציג מודעות רלוונטיות על סמך ביקורים קודמים שלכם באתר שלנו או באתרים אחרים. משתמשים יכולים לבטל הסכמה לפרסום מותאם אישית על ידי ביקור ב<a href="https://www.google.com/settings/ads" target="_blank">הגדרות המודעות של גוגל</a>.</li>
+                    <li><strong>Gemini AI (Google):</strong> The "Create a Story" feature uses Google's Gemini artificial intelligence model. When you click this button, the request (e.g., "a story about a cute lion") is sent to Google's servers to generate the response. We do not send any personally identifiable information with the request.</li>
+                    <li><strong>Advertisements (Future):</strong> We may use advertising services like Google AdSense. These vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites. Users may opt out of personalized advertising by visiting Google's <a href="https://www.google.com/settings/ads" target="_blank">Ads Settings</a>.</li>
                 </ul>
 
-                <h3>קניין רוחני ושימוש הוגן</h3>
-                <p>אנו משקיעים מאמצים רבים ביצירת דפי צביעה מקוריים וייחודיים.</p>
+                <h3>Intellectual Property and Fair Use</h3>
+                <p>We invest significant effort in creating original and unique coloring pages.</p>
                 <ul>
-                    <li>רובם המוחלט של דפי הצביעה באתר נוצרו על ידינו, לעיתים קרובות בסיוע כלי בינה מלאכותית (AI), והם קנייננו הרוחני.</li>
-                    <li>כל דפי הצביעה באתר מיועדים **לשימוש אישי, ביתי וחינוכי בלבד**. אין להפיץ, למכור, או לעשות כל שימוש מסחרי בדפי הצביעה ללא אישור מפורש מאיתנו בכתב.</li>
-                    <li>אם נעשה שימוש בתמונות או אלמנטים המותרים לשימוש מסחרי, אנו עושים זאת בהתאם לתנאי הרישיון שלהם. אם אתם מאמינים שתוכן כלשהו באתר מפר את זכויות היוצרים שלכם, אנא צרו איתנו קשר.</li>
+                    <li>The vast majority of the coloring pages on the site were created by us, often with the assistance of AI tools, and are our intellectual property.</li>
+                    <li>All coloring pages on the site are intended for **personal, domestic, and educational use only**. You may not distribute, sell, or make any commercial use of the coloring pages without our express written permission.</li>
+                    <li>If we use images or elements permitted for commercial use, we do so in accordance with their license terms. If you believe that any content on the site infringes your copyright, please contact us.</li>
                 </ul>
 
-                <h3>פרטיות ילדים</h3>
-                <p>אנו מתייחסים לפרטיות ילדים ברצינות רבה. האתר מיועד לקהל הרחב אך ידידותי לילדים. איננו אוספים ביודעין מידע אישי מזהה מילדים מתחת לגיל 13. אם הורה או אפוטרופוס מגלה שילדו סיפק לנו מידע אישי ללא הסכמתו, עליו ליצור איתנו קשר באופן מיידי. אנו נמחק מידע כזה מהשרתים שלנו בהקדם האפשרי.</p>
+                <h3>Children's Privacy</h3>
+                <p>We take children's privacy very seriously. The site is intended for a general audience but is child-friendly. We do not knowingly collect personally identifiable information from children under the age of 13. If a parent or guardian discovers that their child has provided us with personal information without their consent, they should contact us immediately. We will delete such information from our servers as soon as possible.</p>
 
-                <h3>שינויים במדיניות הפרטיות</h3>
-                <p>אנו שומרים לעצמנו את הזכות לעדכן או לשנות מדיניות זו בכל עת. כל שינוי ייכנס לתוקף מיד עם פרסומו בעמוד זה. אנו ממליצים לבקר בעמוד זה מדי פעם כדי להישאר מעודכנים.</p>
+                <h3>Changes to This Privacy Policy</h3>
+                <p>We reserve the right to update or change this policy at any time. Any changes will be effective immediately upon posting on this page. We recommend visiting this page periodically to stay informed.</p>
 
-                <h3>צרו קשר</h3>
-                <p>אם יש לכם שאלות כלשהן לגבי מדיניות פרטיות זו, אנא צרו איתנו קשר בכתובת: <a href="mailto:suppopgames@gmail.com">suppopgames@gmail.com</a></p>
+                <h3>Contact Us</h3>
+                <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:suppopgames@gmail.com">suppopgames@gmail.com</a></p>
             </main>
         </div>
     </div>
     
-    <!-- ======== תפריט נגישות חדש ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 6: Accessibility Menu Translation           | -->
+    <!-- ====================================================== -->
     <div class="accessibility-toolbar">
         <div id="accessibility-menu">
-            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> הגדל טקסט</button>
-            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> הקטן טקסט</button>
-            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות גבוהה</button>
-            <button id="toggle-links"><i class="fa-solid fa-link"></i> הדגש קישורים</button>
-            <button id="toggle-font"><i class="fa-solid fa-font"></i> גופן קריא</button>
-            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> אפס הגדרות</button>
+            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> Increase Text</button>
+            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> Decrease Text</button>
+            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> High Contrast</button>
+            <button id="toggle-links"><i class="fa-solid fa-link"></i> Highlight Links</button>
+            <button id="toggle-font"><i class="fa-solid fa-font"></i> Readable Font</button>
+            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> Reset Settings</button>
         </div>
-        <button id="accessibility-btn" title="תפריט נגישות">
+        <button id="accessibility-btn" title="Accessibility Menu">
             <i class="fa-solid fa-universal-access"></i>
         </button>
     </div>
 
+    <!-- ====================================================== -->
+    <!-- | CHANGE 7: Footer Content Translation               | -->
+    <!-- ====================================================== -->
     <footer>
         <div class="footer-links">
-            <a href="about.html">אודות</a> |
-            <a href="privacy.html">מדיניות פרטיות</a> |
-            <a href="mailto:suppopgames@gmail.com">צרו קשר</a>
+            <a href="about.html">About Us</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="mailto:suppopgames@gmail.com">Contact Us</a>
         </div>
         <div class="footer-socials">
-            <a href="#" title="פייסבוק"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" title="אינסטגרם"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" title="טיקטוק"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" title="פינטרסט"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
-        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+        <p>&copy; 2025 Ari & Nir's Coloring World. All Rights Reserved.</p>
     </footer>
     
-    <!-- ======== קוד JavaScript חדש להפעלת הנגישות ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 8: JavaScript Translation & Comments        | -->
+    <!-- ====================================================== -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const accessibilityBtn = document.getElementById('accessibility-btn');
@@ -315,44 +333,58 @@
             const body = document.body;
             const html = document.documentElement;
 
-            // פתיחה וסגירה של תפריט הנגישות
-            accessibilityBtn.addEventListener('click', function() {
-                const isDisplayed = accessibilityMenu.style.display === 'block';
-                accessibilityMenu.style.display = isDisplayed ? 'none' : 'block';
-            });
+            // Open and close the accessibility menu
+            if (accessibilityBtn) {
+                accessibilityBtn.addEventListener('click', function() {
+                    const isDisplayed = accessibilityMenu.style.display === 'block';
+                    accessibilityMenu.style.display = isDisplayed ? 'none' : 'block';
+                });
+            }
 
-            // הגדלת טקסט
-            increaseTextBtn.addEventListener('click', function() {
-                let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
-                html.style.fontSize = (currentSize * 1.1) + 'px';
-            });
+            // Increase text
+            if (increaseTextBtn) {
+                increaseTextBtn.addEventListener('click', function() {
+                    let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                    html.style.fontSize = (currentSize * 1.1) + 'px';
+                });
+            }
 
-            // הקטנת טקסט
-            decreaseTextBtn.addEventListener('click', function() {
-                let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
-                html.style.fontSize = (currentSize * 0.9) + 'px';
-            });
+            // Decrease text
+            if (decreaseTextBtn) {
+                decreaseTextBtn.addEventListener('click', function() {
+                    let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                    html.style.fontSize = (currentSize * 0.9) + 'px';
+                });
+            }
 
-            // ניגודיות גבוהה
-            toggleContrastBtn.addEventListener('click', function() {
-                body.classList.toggle('high-contrast');
-            });
+            // High contrast
+            if (toggleContrastBtn) {
+                toggleContrastBtn.addEventListener('click', function() {
+                    body.classList.toggle('high-contrast');
+                });
+            }
 
-            // הדגשת קישורים
-            toggleLinksBtn.addEventListener('click', function() {
-                body.classList.toggle('highlight-links');
-            });
+            // Highlight links
+            if (toggleLinksBtn) {
+                toggleLinksBtn.addEventListener('click', function() {
+                    body.classList.toggle('highlight-links');
+                });
+            }
 
-            // גופן קריא
-            toggleFontBtn.addEventListener('click', function() {
-                body.classList.toggle('readable-font');
-            });
+            // Readable font
+            if (toggleFontBtn) {
+                toggleFontBtn.addEventListener('click', function() {
+                    body.classList.toggle('readable-font');
+                });
+            }
 
-            // איפוס הגדרות
-            resetSettingsBtn.addEventListener('click', function() {
-                html.style.fontSize = ''; // חזרה לגודל המקורי
-                body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
-            });
+            // Reset settings
+            if (resetSettingsBtn) {
+                resetSettingsBtn.addEventListener('click', function() {
+                    html.style.fontSize = ''; // Back to original size
+                    body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
+                });
+            }
         });
     </script>
 

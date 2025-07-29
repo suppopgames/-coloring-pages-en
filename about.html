@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<!-- ====================================================== -->
+<!-- | CHANGE 1: Language and Direction                   | -->
+<!-- ====================================================== -->
+<html lang="en" dir="ltr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6RQ2QSS8PZ');
-</script>
+    <!-- Google Analytics tag remains the same -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6RQ2QSS8PZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>אודות עולם הצביעה של ארי וניר</title>
 
-    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 2: SEO Meta Tags for About Us Page          | -->
+    <!-- ====================================================== -->
+    <title>About Ari & Nir's Coloring World</title>
+    <meta name="description" content="Read the story behind Ari & Nir's Coloring World. A project born from a father's love for his two imaginative children, with a touch of AI magic.">
+
+    <!-- Font Awesome library link remains the same -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- ======== קוד העיצוב (CSS) מועתק מהעמוד הראשי ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 3: CSS Translation & LTR Adjustments        | -->
+    <!-- ====================================================== -->
     <style>
-        /* כל קוד ה-CSS שהיה לנו נמצא כאן... */
         @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
         :root {
             --primary-color: #29b6f6;
@@ -30,7 +38,7 @@
             --white-color: #ffffff;
         }
         html {
-            font-size: 16px; /* גודל בסיס לחישוב יחידות rem */
+            font-size: 16px;
         }
         body {
             font-family: 'Varela Round', sans-serif;
@@ -47,7 +55,7 @@
             gap: 20px;
         }
         .main-content {
-            flex: 1; /* Make main content take full width on this page */
+            flex: 1; /* Make main content take full width */
         }
         header {
             text-align: center;
@@ -128,11 +136,10 @@
             color: var(--primary-color);
         }
         
-        /* --- עיצוב חדש לנגישות --- */
         .accessibility-toolbar {
             position: fixed;
             bottom: 20px;
-            left: 20px;
+            right: 20px; /* CSS FIX: Changed from left to right for LTR consistency */
             z-index: 1001;
         }
         #accessibility-btn {
@@ -153,7 +160,7 @@
             display: none;
             position: absolute;
             bottom: 70px;
-            left: 0;
+            right: 0; /* CSS FIX: Changed from left to right */
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -165,7 +172,7 @@
             align-items: center;
             gap: 10px;
             width: 100%;
-            text-align: right;
+            text-align: left; /* CSS FIX: Changed from right to left */
             margin-bottom: 10px;
             padding: 10px;
             font-size: 1rem;
@@ -199,7 +206,6 @@
         body.readable-font {
             font-family: Arial, sans-serif !important;
         }
-        /* --- סוף עיצוב נגישות --- */
         
         @media (max-width: 768px) {
             header h1 {
@@ -210,75 +216,87 @@
 </head>
 <body>
     
+    <!-- ====================================================== -->
+    <!-- | CHANGE 4: Header Content Translation               | -->
+    <!-- ====================================================== -->
     <header>
-        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
-        <p>גלו עולם שבו כל דף צביעה הופך לסיפור אישי וקסום.</p>
-        
+        <h1><a href="index.html">Ari & Nir's Coloring World ✨</a></h1>
+        <p>Discover a world where every coloring page becomes a magical story.</p>
         <nav>
-            <a href="index.html">עמוד הבית</a> |
-            <a href="animals.html">חיות</a> |
-            <a href="vehicles.html">כלי רכב</a> |
-            <a href="sports.html">ספורט</a> |
-            <a href="cartoons.html">דמויות מצוירות</a>
+            <a href="index.html">Home</a> |
+            <a href="animals.html">Animals</a> |
+            <a href="vehicles.html">Vehicles</a> |
+            <a href="sports.html">Sports</a> |
+            <a href="cartoons.html">Cartoons</a>
         </nav>
     </header>
 
     <div class="container">
         <div class="main-content">
+            <!-- ====================================================== -->
+            <!-- | CHANGE 5: Main Content Translation for About Page  | -->
+            <!-- ====================================================== -->
             <main class="content-box about-content">
-                <h2>הסיפור שלנו</h2>
+                <h2>Our Story</h2>
                 <p>
-                    הכל התחיל בבית, עם שני ילדים מדהימים ומלאי דמיון – ארי וניר. ארי, הבכור, אוהב אקשן. הוא יכול לצייר שעות את רונאלדו מבקיע שער ניצחון, או גיבורי על שמצילים את העולם. ניר, הקטן, הוא אמן של צבעים וצורות. הוא אוהב את כל מה שנוסע על גלגלים, את הדמויות מהסדרות האהובות עליו, ותמיד מוסיף נגיעה של אדום, הצבע האהוב עליו, לכל יצירה.
+                    It all started at home, with two amazing and imaginative children – Ari and Nir. Ari, the older one, loves action. He can spend hours drawing his favorite soccer players scoring a winning goal, or superheroes saving the world. Nir, the younger one, is an artist of colors and shapes. He loves everything on wheels, the characters from his favorite shows, and always adds a touch of red, his favorite color, to every creation.
                 </p>
-                <img src="images/about-us.jpg" alt="ילדים מציירים" class="about-image">
+                <img src="images/about-us.jpg" alt="Children drawing and coloring" class="about-image">
                 <p>
-                    כאבא, רציתי ליצור עבורם מקום אחד שבו הדמיון שלהם יוכל לפרוח בלי גבולות. מקום עם אינסוף דפי צביעה, מכל הסוגים ולכל הגילאים. כך נולד "עולם הצביעה של ארי וניר".
-                </p>
-                <p>
-                    אבל רצינו להוסיף עוד קצת קסם. חשבנו לעצמנו, "מה אם כל ציור יכול היה לספר סיפור?". וכאן, בעזרת טכנולוגיה קטנה וקסומה של בינה מלאכותית, הפכנו את המחשבה למציאות. ליד כל דף צביעה, תמצאו כפתור קטן שיכול להמציא סיפור אישי וחדש במיוחד עבור הציור שלכם, והופך את חווית הצביעה להרפתקה שלמה.
+                    As a father, I wanted to create a single place for them where their imagination could flourish without limits. A place with endless coloring pages, of all kinds and for all ages. That's how "Ari & Nir's Coloring World" was born.
                 </p>
                 <p>
-                    האתר הזה הוא מתנה מאיתנו, אבא, ארי וניר, לכל הילדים (וההורים) באשר הם. אנחנו מקווים שתיהנו לצבוע, לדמיין וליצור סיפורים משלכם.
+                    But we wanted to add a little more magic. We thought to ourselves, "What if every drawing could tell a story?". And here, with the help of a little magical artificial intelligence technology, we turned that thought into reality. Next to each coloring page, you'll find a small button that can invent a personal and new story just for your drawing, turning the coloring experience into a complete adventure.
+                </p>
+                <p>
+                    This website is a gift from us, a dad, Ari, and Nir, to all the children (and parents) everywhere. We hope you enjoy coloring, imagining, and creating your own stories.
                 </p>
                 <p style="text-align: center; font-weight: bold; font-size: 1.2em; color: var(--accent-color);">
-                    באהבה גדולה,<br>
-                    צוות עולם הצביעה
+                    With lots of love,<br>
+                    The Coloring World Team
                 </p>
             </main>
         </div>
     </div>
     
-    <!-- ======== תפריט נגישות חדש ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 6: Accessibility Menu Translation           | -->
+    <!-- ====================================================== -->
     <div class="accessibility-toolbar">
         <div id="accessibility-menu">
-            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> הגדל טקסט</button>
-            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> הקטן טקסט</button>
-            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות גבוהה</button>
-            <button id="toggle-links"><i class="fa-solid fa-link"></i> הדגש קישורים</button>
-            <button id="toggle-font"><i class="fa-solid fa-font"></i> גופן קריא</button>
-            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> אפס הגדרות</button>
+            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> Increase Text</button>
+            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> Decrease Text</button>
+            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> High Contrast</button>
+            <button id="toggle-links"><i class="fa-solid fa-link"></i> Highlight Links</button>
+            <button id="toggle-font"><i class="fa-solid fa-font"></i> Readable Font</button>
+            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> Reset Settings</button>
         </div>
-        <button id="accessibility-btn" title="תפריט נגישות">
+        <button id="accessibility-btn" title="Accessibility Menu">
             <i class="fa-solid fa-universal-access"></i>
         </button>
     </div>
 
+    <!-- ====================================================== -->
+    <!-- | CHANGE 7: Footer Content Translation               | -->
+    <!-- ====================================================== -->
     <footer>
         <div class="footer-links">
-            <a href="about.html">אודות</a> |
-            <a href="privacy.html">מדיניות פרטיות</a> |
-            <a href="mailto:suppopgames@gmail.com">צרו קשר</a>
+            <a href="about.html">About Us</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="mailto:suppopgames@gmail.com">Contact Us</a>
         </div>
         <div class="footer-socials">
-            <a href="#" title="פייסבוק"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" title="אינסטגרם"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" title="טיקטוק"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" title="פינטרסט"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
         </div>
-        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+        <p>&copy; 2025 Ari & Nir's Coloring World. All Rights Reserved.</p>
     </footer>
 
-    <!-- ======== קוד JavaScript חדש להפעלת הנגישות ======== -->
+    <!-- ====================================================== -->
+    <!-- | CHANGE 8: JavaScript Translation & Comments        | -->
+    <!-- ====================================================== -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const accessibilityBtn = document.getElementById('accessibility-btn');
@@ -292,7 +310,7 @@
             const body = document.body;
             const html = document.documentElement;
 
-            // פתיחה וסגירה של תפריט הנגישות
+            // Open and close the accessibility menu
             if (accessibilityBtn) {
                 accessibilityBtn.addEventListener('click', function() {
                     const isDisplayed = accessibilityMenu.style.display === 'block';
@@ -300,7 +318,7 @@
                 });
             }
 
-            // הגדלת טקסט
+            // Increase text
             if (increaseTextBtn) {
                 increaseTextBtn.addEventListener('click', function() {
                     let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
@@ -308,7 +326,7 @@
                 });
             }
 
-            // הקטנת טקסט
+            // Decrease text
             if (decreaseTextBtn) {
                 decreaseTextBtn.addEventListener('click', function() {
                     let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
@@ -316,31 +334,31 @@
                 });
             }
 
-            // ניגודיות גבוהה
+            // High contrast
             if (toggleContrastBtn) {
                 toggleContrastBtn.addEventListener('click', function() {
                     body.classList.toggle('high-contrast');
                 });
             }
 
-            // הדגשת קישורים
+            // Highlight links
             if (toggleLinksBtn) {
                 toggleLinksBtn.addEventListener('click', function() {
                     body.classList.toggle('highlight-links');
                 });
             }
 
-            // גופן קריא
+            // Readable font
             if (toggleFontBtn) {
                 toggleFontBtn.addEventListener('click', function() {
                     body.classList.toggle('readable-font');
                 });
             }
 
-            // איפוס הגדרות
+            // Reset settings
             if (resetSettingsBtn) {
                 resetSettingsBtn.addEventListener('click', function() {
-                    html.style.fontSize = ''; // חזרה לגודל המקורי
+                    html.style.fontSize = ''; // Back to original size
                     body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
                 });
             }
