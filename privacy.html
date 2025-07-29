@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6RQ2QSS8PZ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדיניות פרטיות - עולם הצביעה של ארי וניר</title>
+
+    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ======== קוד העיצוב (CSS) מועתק מהעמוד הראשי ======== -->
+    <style>
+        /* כל קוד ה-CSS שהיה לנו נמצא כאן... */
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        :root {
+            --primary-color: #29b6f6;
+            --accent-color: #ff8a65;
+            --background-color: #fafff4;
+            --header-bg: #e0f7fa;
+            --text-color: #424242;
+            --white-color: #ffffff;
+        }
+        html {
+            font-size: 16px; /* גודל בסיס לחישוב יחידות rem */
+        }
+        body {
+            font-family: 'Varela Round', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 1; /* Make main content take full width on this page */
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--header-bg), var(--white-color));
+            padding: 30px 20px;
+            margin: 0 20px 20px 20px;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        header h1 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        header h1 {
+             margin: 0;
+             font-size: 2.5rem;
+        }
+        header nav a, header nav strong {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: var(--accent-color);
+        }
+        .content-box {
+            background-color: var(--white-color);
+            padding: 25px 40px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+        .policy-content h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--header-bg);
+            padding-bottom: 10px;
+        }
+        .policy-content h3 {
+            color: var(--accent-color);
+            margin-top: 30px;
+        }
+        .policy-content p, .policy-content ul {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .policy-content ul {
+            padding-right: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px 20px;
+            background-color: #f1f1f1;
+            color: #777;
+        }
+        .footer-links {
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-socials {
+            margin-bottom: 15px;
+        }
+        .footer-socials a {
+            margin: 0 12px;
+            color: #555;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .footer-socials a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* --- עיצוב חדש לנגישות --- */
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1001;
+        }
+        #accessibility-btn {
+            background-color: var(--primary-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            border: 2px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #accessibility-menu {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            width: 250px;
+            padding: 15px;
+        }
+        #accessibility-menu button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            font-family: 'Varela Round', sans-serif;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #accessibility-menu button:hover {
+            background-color: #e9e9e9;
+        }
+        #accessibility-menu button i {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+        body.high-contrast {
+            background-color: #000;
+            color: #fff;
+        }
+        body.high-contrast .content-box, 
+        body.high-contrast header,
+        body.high-contrast footer {
+            background-color: #111;
+            border: 1px solid #fff;
+        }
+        body.highlight-links a {
+            text-decoration: underline !important;
+            font-weight: bold;
+        }
+        body.readable-font {
+            font-family: Arial, sans-serif !important;
+        }
+        /* --- סוף עיצוב נגישות --- */
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
+        <p>גלו עולם שבו כל דף צביעה הופך לסיפור אישי וקסום.</p>
+        
+        <nav>
+            <a href="index.html">עמוד הבית</a> |
+            <a href="animals.html">חיות</a> |
+            <a href="vehicles.html">כלי רכב</a> |
+            <a href="sports.html">ספורט</a> |
+            <a href="cartoons.html">דמויות מצוירות</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <main class="content-box policy-content">
+                <h2>מדיניות פרטיות</h2>
+                <p><strong>תאריך עדכון אחרון: 10 ביולי 2025</strong></p>
+                <p>ברוכים הבאים ל"עולם הצביעה של ארי וניר" ("האתר"). אנו מחויבים להגן על פרטיות המשתמשים שלנו, ובמיוחד על פרטיותם של ילדים. מדיניות זו מתארת איזה מידע אנו אוספים וכיצד אנו משתמשים בו.</p>
+
+                <h3>איסוף מידע</h3>
+                <p>אנו אוספים שני סוגי מידע:</p>
+                <ul>
+                    <li><strong>מידע שאינו אישי:</strong> כמו רוב האתרים, אנו אוספים מידע שהדפדפן שולח באופן אוטומטי, כגון סוג הדפדפן, סוג המכשיר, ונתונים סטטיסטיים אנונימיים על השימוש באתר. מידע זה עוזר לנו להבין כיצד לשפר את האתר.</li>
+                    <li><strong>מידע אישי:</strong> אנו אוספים מידע אישי רק כאשר אתם מספקים לנו אותו מרצונכם. לדוגמה, אם תיצרו איתנו קשר באמצעות טופס "צור קשר" (שיוקם בעתיד). ההשתתפות בסקרים באתר היא אנונימית לחלוטין.</li>
+                </ul>
+
+                <h3>שימוש במידע</h3>
+                <p>אנו משתמשים במידע שאנו אוספים אך ורק כדי:</p>
+                <ul>
+                    <li>לשפר ולתחזק את האתר והשירותים שלנו.</li>
+                    <li>להבין אילו תכנים ודפי צביעה הם הפופולריים ביותר.</li>
+                    <li>להשיב לפניות ושאלות שלכם.</li>
+                </ul>
+
+                <h3>שירותי צד שלישי</h3>
+                <p>האתר שלנו משתמש בשירותים של צד שלישי כדי לספק חוויה טובה יותר:</p>
+                <ul>
+                    <li><strong>Gemini AI (Google):</strong> הפיצ'רים "המצא לי רעיון" ו"המצא לי סיפור" משתמשים במודל הבינה המלאכותית של גוגל, Gemini. כאשר אתם לוחצים על כפתורים אלו, הבקשה (למשל, "סיפור על אריה חמוד") נשלחת לשרתי גוגל כדי לייצר את התשובה. אנו לא שולחים שום מידע אישי המזהה אתכם יחד עם הבקשה.</li>
+                    <li><strong>פרסומות (בעתיד):</strong> אנו עשויים להשתמש בשירותי פרסום כמו Google AdSense. ספקים אלו, כולל גוגל, משתמשים ב"עוגיות" (Cookies) כדי להציג מודעות רלוונטיות על סמך ביקורים קודמים שלכם באתר שלנו או באתרים אחרים. משתמשים יכולים לבטל הסכמה לפרסום מותאם אישית על ידי ביקור ב<a href="https://www.google.com/settings/ads" target="_blank">הגדרות המודעות של גוגל</a>.</li>
+                </ul>
+
+                <h3>קניין רוחני ושימוש הוגן</h3>
+                <p>אנו משקיעים מאמצים רבים ביצירת דפי צביעה מקוריים וייחודיים.</p>
+                <ul>
+                    <li>רובם המוחלט של דפי הצביעה באתר נוצרו על ידינו, לעיתים קרובות בסיוע כלי בינה מלאכותית (AI), והם קנייננו הרוחני.</li>
+                    <li>כל דפי הצביעה באתר מיועדים **לשימוש אישי, ביתי וחינוכי בלבד**. אין להפיץ, למכור, או לעשות כל שימוש מסחרי בדפי הצביעה ללא אישור מפורש מאיתנו בכתב.</li>
+                    <li>אם נעשה שימוש בתמונות או אלמנטים המותרים לשימוש מסחרי, אנו עושים זאת בהתאם לתנאי הרישיון שלהם. אם אתם מאמינים שתוכן כלשהו באתר מפר את זכויות היוצרים שלכם, אנא צרו איתנו קשר.</li>
+                </ul>
+
+                <h3>פרטיות ילדים</h3>
+                <p>אנו מתייחסים לפרטיות ילדים ברצינות רבה. האתר מיועד לקהל הרחב אך ידידותי לילדים. איננו אוספים ביודעין מידע אישי מזהה מילדים מתחת לגיל 13. אם הורה או אפוטרופוס מגלה שילדו סיפק לנו מידע אישי ללא הסכמתו, עליו ליצור איתנו קשר באופן מיידי. אנו נמחק מידע כזה מהשרתים שלנו בהקדם האפשרי.</p>
+
+                <h3>שינויים במדיניות הפרטיות</h3>
+                <p>אנו שומרים לעצמנו את הזכות לעדכן או לשנות מדיניות זו בכל עת. כל שינוי ייכנס לתוקף מיד עם פרסומו בעמוד זה. אנו ממליצים לבקר בעמוד זה מדי פעם כדי להישאר מעודכנים.</p>
+
+                <h3>צרו קשר</h3>
+                <p>אם יש לכם שאלות כלשהן לגבי מדיניות פרטיות זו, אנא צרו איתנו קשר בכתובת: <a href="mailto:suppopgames@gmail.com">suppopgames@gmail.com</a></p>
+            </main>
+        </div>
+    </div>
+    
+    <!-- ======== תפריט נגישות חדש ======== -->
+    <div class="accessibility-toolbar">
+        <div id="accessibility-menu">
+            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> הגדל טקסט</button>
+            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> הקטן טקסט</button>
+            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות גבוהה</button>
+            <button id="toggle-links"><i class="fa-solid fa-link"></i> הדגש קישורים</button>
+            <button id="toggle-font"><i class="fa-solid fa-font"></i> גופן קריא</button>
+            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> אפס הגדרות</button>
+        </div>
+        <button id="accessibility-btn" title="תפריט נגישות">
+            <i class="fa-solid fa-universal-access"></i>
+        </button>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">אודות</a> |
+            <a href="privacy.html">מדיניות פרטיות</a> |
+            <a href="mailto:suppopgames@gmail.com">צרו קשר</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#" title="פייסבוק"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="אינסטגרם"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="טיקטוק"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="פינטרסט"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+    </footer>
+    
+    <!-- ======== קוד JavaScript חדש להפעלת הנגישות ======== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accessibilityBtn = document.getElementById('accessibility-btn');
+            const accessibilityMenu = document.getElementById('accessibility-menu');
+            const increaseTextBtn = document.getElementById('increase-text');
+            const decreaseTextBtn = document.getElementById('decrease-text');
+            const toggleContrastBtn = document.getElementById('toggle-contrast');
+            const toggleLinksBtn = document.getElementById('toggle-links');
+            const toggleFontBtn = document.getElementById('toggle-font');
+            const resetSettingsBtn = document.getElementById('reset-settings');
+            const body = document.body;
+            const html = document.documentElement;
+
+            // פתיחה וסגירה של תפריט הנגישות
+            accessibilityBtn.addEventListener('click', function() {
+                const isDisplayed = accessibilityMenu.style.display === 'block';
+                accessibilityMenu.style.display = isDisplayed ? 'none' : 'block';
+            });
+
+            // הגדלת טקסט
+            increaseTextBtn.addEventListener('click', function() {
+                let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                html.style.fontSize = (currentSize * 1.1) + 'px';
+            });
+
+            // הקטנת טקסט
+            decreaseTextBtn.addEventListener('click', function() {
+                let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                html.style.fontSize = (currentSize * 0.9) + 'px';
+            });
+
+            // ניגודיות גבוהה
+            toggleContrastBtn.addEventListener('click', function() {
+                body.classList.toggle('high-contrast');
+            });
+
+            // הדגשת קישורים
+            toggleLinksBtn.addEventListener('click', function() {
+                body.classList.toggle('highlight-links');
+            });
+
+            // גופן קריא
+            toggleFontBtn.addEventListener('click', function() {
+                body.classList.toggle('readable-font');
+            });
+
+            // איפוס הגדרות
+            resetSettingsBtn.addEventListener('click', function() {
+                html.style.fontSize = ''; // חזרה לגודל המקורי
+                body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
+            });
+        });
+    </script>
+
+</body>
+</html>

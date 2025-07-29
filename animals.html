@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6RQ2QSS8PZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6RQ2QSS8PZ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עולם הצביעה של ארי וניר - חיות</title>
+
+    <!-- ======== שדרוג 2: תיאור למנועי חיפוש ======== -->
+    <meta name="description" content="מחפשים דפי צביעה של חיות? גלו מאות דפים של אריות, דינוזאורים, כלבים ועוד. הדפסה חינם וסיפורים קסומים בכל דף בעולם הצביעה של ארי וניר.">
+
+    <!-- ======== הוספת ספריית אייקונים Font Awesome ======== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ======== קוד העיצוב (CSS) עם כל השדרוגים ======== -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        :root {
+            --primary-color: #29b6f6;
+            --accent-color: #ff8a65;
+            --background-color: #fafff4;
+            --header-bg: #e0f7fa;
+            --text-color: #424242;
+            --white-color: #ffffff;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Varela Round', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: var(--white-color);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+            align-self: flex-start;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--header-bg), var(--white-color));
+            padding: 30px 20px;
+            margin: 0 20px 20px 20px;
+            border-radius: 0 0 25px 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        header h1 a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        header h1 {
+             margin: 0;
+             font-size: 2.5em;
+        }
+        header nav a, header nav strong {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: var(--accent-color);
+        }
+        .btn {
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-family: 'Varela Round', sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+            box-shadow: 0 4px 10px rgba(255, 138, 101, 0.4);
+        }
+        .btn-primary:hover {
+            box-shadow: 0 6px 15px rgba(255, 138, 101, 0.5);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+            box-shadow: none;
+        }
+        .btn-secondary:hover {
+            background-color: var(--accent-color);
+            color: var(--white-color);
+        }
+        .content-box {
+            background-color: var(--white-color);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .coloring-card {
+            border: 1px solid #eee;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            padding: 15px;
+            background-color: var(--white-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .coloring-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+        }
+        .coloring-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+        .story-output {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 40px;
+            background-color: #f9f9f9;
+        }
+        .sidebar-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .sidebar ul li.active a {
+            background-color: #e0f7fa;
+            font-weight: bold;
+        }
+         .sidebar ul li a:hover{
+            background-color: #e0f7fa;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px 20px;
+            background-color: #f1f1f1;
+            color: #777;
+        }
+        .footer-links {
+            margin-bottom: 15px;
+        }
+        .footer-links a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-socials {
+            margin-bottom: 15px;
+        }
+        .footer-socials a {
+            margin: 0 12px;
+            color: #555;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .footer-socials a:hover {
+            color: var(--primary-color);
+        }
+        
+        .modal {
+          display: none; 
+          position: fixed; 
+          z-index: 1000; 
+          padding-top: 50px; 
+          left: 0;
+          top: 0;
+          width: 100%; 
+          height: 100%; 
+          overflow: auto; 
+          background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: auto;
+          max-width: 80%;
+          max-height: 80vh;
+        }
+        .modal-content, #caption {
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+        @keyframes zoom {
+          from {transform:scale(0)}
+          to {transform:scale(1)}
+        }
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .accessibility-toolbar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+        #accessibility-btn {
+            background-color: var(--primary-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            border: 2px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #accessibility-menu {
+            display: none;
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            width: 250px;
+            padding: 15px;
+        }
+        #accessibility-menu button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            font-family: 'Varela Round', sans-serif;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        #accessibility-menu button:hover {
+            background-color: #e9e9e9;
+        }
+        #accessibility-menu button i {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+        body.high-contrast {
+            background-color: #000;
+            color: #fff;
+        }
+        body.high-contrast .content-box, 
+        body.high-contrast header,
+        body.high-contrast footer {
+            background-color: #111;
+            border: 1px solid #fff;
+        }
+        body.highlight-links a {
+            text-decoration: underline !important;
+            font-weight: bold;
+        }
+        body.readable-font {
+            font-family: Arial, sans-serif !important;
+        }
+        
+        #back-to-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--accent-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        #back-to-top-btn:hover {
+            background-color: #e65100;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1><a href="index.html">עולם הצביעה של ארי וניר ✨</a></h1>
+        <p>גלו עולם שבו כל דף צביעה הופך לסיפור אישי וקסום.</p>
+        
+        <nav>
+            <a href="index.html">עמוד הבית</a> |
+            <a href="vehicles.html">כלי רכב</a> |
+            <a href="sports.html">ספורט</a> |
+            <a href="cartoons.html">דמויות מצוירות</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <main class="content-box">
+                <h2>קטגוריה: חיות 🐾</h2>
+                <p>כאן תמצאו את כל דפי הצביעה של החיות הכי חמודות ומעניינות שיש! מאריות ופילים ועד לדינוזאורים וחיות ים.</p>
+                <div class="gallery-grid">
+                    <!-- כרטיסייה 1 -->
+                    <div class="coloring-card">
+                        <img src="images/cute_lion.png" alt="דף צביעה של אריה" class="image-popup">
+                        <h3>אריה חמוד</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="אריה חמוד וידידותי עם רעמה גדולה">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+                    <!-- כרטיסייה 2 -->
+                    <div class="coloring-card">
+                        <img src="images/smiling-dino.png" alt="דף צביעה של דינוזאור" class="image-popup">
+                        <h3>דינוזאור מחייך</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="דינוזאור ירוק וחמוד שאוהב לאכול עלים">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+                    
+                    <!-- דף חדש 3 -->
+                    <div class="coloring-card">
+                        <img src="images/cute_pup.png" alt="דף צביעה של גורים מתחבקים" class="image-popup">
+                        <h3>גורי כלבים מתחבקים</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="גורי כלבים חמודים שמתחבקים ואוהבים">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                    <!-- דף חדש 4 -->
+                    <div class="coloring-card">
+                        <img src="images/sleepy_snake.png" alt="נחש יושן בחדר ילדים" class="image-popup">
+                        <h3>נחש ישן בחדר</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="נחש חמוד וטוב לב נרדם בחדר סיפור מצחיק מאוד">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                    <!-- דף חדש 5 -->
+                    <div class="coloring-card">
+                        <img src="images/elephent.png" alt="פיל" class="image-popup">
+                        <h3>פיל</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="פיל מצחיק טס ליוון">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                    <!-- דף חדש 6 -->
+                    <div class="coloring-card">
+                        <img src="images/cat_dog.png" alt="חתול קופץ מעל כלב" class="image-popup">
+                        <h3>חתול קופץ מעל כלב</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="החתול ראה את הכלב ואז קפץ מעליו">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                    <!-- דף חדש 7 -->
+                    <div class="coloring-card">
+                        <img src="images/monkey_on_bike.png" alt="קוף נוסע על אופניים ומשפריץ מים" class="image-popup">
+                        <h3>קוף על אופניים</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="קוף ליצן נוסע על אופניים ומשפריץ מים">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                    <!-- דף חדש 8 -->
+                    <div class="coloring-card">
+                        <img src="images/namer.png" alt="נמר מיוחד" class="image-popup">
+                        <h3>נמר קסום</h3>
+                        <button class="btn btn-primary print-btn">הדפס אותי</button>
+                        <button class="btn btn-secondary generate-story-btn" data-subject="הנמר המיוחד בסוואנה">✨ המצא לי סיפור</button>
+                        <div class="story-output"></div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+        <aside class="sidebar">
+            <h3>כל הקטגוריות</h3>
+            <ul>
+                <li class="active"><a href="animals.html"><span>🐾</span> **חיות**</a></li>
+                <li><a href="vehicles.html"><span>🚗</span> כלי רכב</a></li>
+                <li><a href="sports.html"><span>⚽</span> ספורט (לארי!)</a></li>
+                <li><a href="cartoons.html"><span>📺</span> דמויות מצוירות (לניר!)</a></li>
+                <li><a href="dinosaurs.html"><span>🦖</span> דינוזאורים</a></li>
+                <li><a href="princesses.html"><span>👑</span> נסיכות ופיות</a></li>
+                <li><a href="superheroes.html"><span>🦸</span> גיבורי על</a></li>
+                <li><a href="fantasy.html"><span>🦄</span> פנטזיה וקסם</a></li>
+                <li><a href="food.html"><span>🍕</span> אוכל טעים</a></li>
+                <li><a href="nature.html"><span>🍂</span> טבע ועונות השנה</a></li>
+                <li><a href="mandalas.html"><span>🎨</span> מנדלות וצורות</a></li>
+                <li><a href="holidays.html"><span>🕎</span> חגים ומועדים</a></li>
+            </ul>
+        </aside>
+    </div>
+    
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- ======== תפריט נגישות ======== -->
+    <div class="accessibility-toolbar">
+        <div id="accessibility-menu">
+            <button id="increase-text"><i class="fa-solid fa-magnifying-glass-plus"></i> הגדל טקסט</button>
+            <button id="decrease-text"><i class="fa-solid fa-magnifying-glass-minus"></i> הקטן טקסט</button>
+            <button id="toggle-contrast"><i class="fa-solid fa-circle-half-stroke"></i> ניגודיות גבוהה</button>
+            <button id="toggle-links"><i class="fa-solid fa-link"></i> הדגש קישורים</button>
+            <button id="toggle-font"><i class="fa-solid fa-font"></i> גופן קריא</button>
+            <button id="reset-settings"><i class="fa-solid fa-arrow-rotate-left"></i> אפס הגדרות</button>
+        </div>
+        <button id="accessibility-btn" title="תפריט נגישות">
+            <i class="fa-solid fa-universal-access"></i>
+        </button>
+    </div>
+
+    <!-- ======== שדרוג 3: כפתור חזרה למעלה ======== -->
+    <button id="back-to-top-btn" title="חזרה למעלה"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">אודות</a> |
+            <a href="privacy.html">מדיניות פרטיות</a> |
+            <a href="mailto:suppopgames@gmail.com">צרו קשר</a>
+        </div>
+        <div class="footer-socials">
+            <a href="#" title="פייסבוק"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="אינסטגרם"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="טיקטוק"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" title="פינטרסט"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+        <p>© כל הזכויות שמורות לעולם הצביעה של ארי וניר, 2025</p>
+    </footer>
+
+    <script type="module">
+        // JavaScript for Gemini, Print, Stories, Modal
+        async function callGemini(prompt, outputElement, loadingMessage) {
+            outputElement.innerText = loadingMessage || 'חושב על משהו מדהים...';
+            const apiKey = "AIzaSyBq5yzvc9ljR84lA4vEBXCf0xn9nGu0TQk"; 
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+            const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }] };
+            try {
+                const response = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                if (!response.ok) throw new Error(`שגיאת API: ${response.statusText}`);
+                const result = await response.json();
+                if (result.candidates && result.candidates[0].content && result.candidates[0].content.parts) {
+                    outputElement.innerText = result.candidates[0].content.parts[0].text;
+                } else { throw new Error("תשובה לא צפויה מה-API."); }
+            } catch (error) {
+                console.error("שגיאה בקריאה ל-Gemini:", error);
+                outputElement.innerText = 'אוי, משהו השתבש. נסו שוב.';
+            }
+        }
+
+        function printImage(imageUrl) {
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`<html><head><title>הדפסת דף צביעה</title><style>body { margin: 0; padding: 0; text-align: center; } img { max-width: 100%; max-height: 95vh; }</style></head><body><img src="${imageUrl}" onload="window.print(); window.close();" /></body></html>`);
+            printWindow.document.close();
+        }
+
+        document.querySelectorAll('.generate-story-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const card = event.target.closest('.coloring-card');
+                const storyOutput = card.querySelector('.story-output');
+                const imageSubject = event.target.dataset.subject;
+                const prompt = `כתוב סיפור קצרצר (2-3 משפטים) וקסום לילדים על ${imageSubject}. הסיפור צריך להיות שמח, חיובי ומעורר דמיון.`;
+                callGemini(prompt, storyOutput, 'רוקם סיפור קסום...');
+            });
+        });
+
+        document.querySelectorAll('.print-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const card = event.target.closest('.coloring-card');
+                const image = card.querySelector('img');
+                const imageUrl = image.src;
+                printImage(imageUrl);
+            });
+        });
+
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        document.querySelectorAll('.image-popup').forEach(image => {
+            image.addEventListener('click', function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            });
+        });
+
+        const span = document.getElementsByClassName("close")[0];
+        if (span) {
+            span.onclick = function() { 
+                modal.style.display = "none";
+            }
+        }
+        
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+    <!-- ======== קוד JavaScript חדש להפעלת הנגישות ======== -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accessibilityBtn = document.getElementById('accessibility-btn');
+            const accessibilityMenu = document.getElementById('accessibility-menu');
+            const increaseTextBtn = document.getElementById('increase-text');
+            const decreaseTextBtn = document.getElementById('decrease-text');
+            const toggleContrastBtn = document.getElementById('toggle-contrast');
+            const toggleLinksBtn = document.getElementById('toggle-links');
+            const toggleFontBtn = document.getElementById('toggle-font');
+            const resetSettingsBtn = document.getElementById('reset-settings');
+            const backToTopBtn = document.getElementById('back-to-top-btn');
+            const body = document.body;
+            const html = document.documentElement;
+
+            // פתיחה וסגירה של תפריט הנגישות
+            if (accessibilityBtn) {
+                accessibilityBtn.addEventListener('click', function() {
+                    const isDisplayed = accessibilityMenu.style.display === 'block';
+                    accessibilityMenu.style.display = isDisplayed ? 'none' : 'block';
+                });
+            }
+
+            // הגדלת טקסט
+            if (increaseTextBtn) {
+                increaseTextBtn.addEventListener('click', function() {
+                    let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                    html.style.fontSize = (currentSize * 1.1) + 'px';
+                });
+            }
+
+            // הקטנת טקסט
+            if (decreaseTextBtn) {
+                decreaseTextBtn.addEventListener('click', function() {
+                    let currentSize = parseFloat(window.getComputedStyle(html).fontSize);
+                    html.style.fontSize = (currentSize * 0.9) + 'px';
+                });
+            }
+
+            // ניגודיות גבוהה
+            if (toggleContrastBtn) {
+                toggleContrastBtn.addEventListener('click', function() {
+                    body.classList.toggle('high-contrast');
+                });
+            }
+
+            // הדגשת קישורים
+            if (toggleLinksBtn) {
+                toggleLinksBtn.addEventListener('click', function() {
+                    body.classList.toggle('highlight-links');
+                });
+            }
+
+            // גופן קריא
+            if (toggleFontBtn) {
+                toggleFontBtn.addEventListener('click', function() {
+                    body.classList.toggle('readable-font');
+                });
+            }
+
+            // איפוס הגדרות
+            if (resetSettingsBtn) {
+                resetSettingsBtn.addEventListener('click', function() {
+                    html.style.fontSize = ''; // חזרה לגודל המקורי
+                    body.classList.remove('high-contrast', 'highlight-links', 'readable-font');
+                });
+            }
+
+            // --- שדרוג 3: קוד לכפתור חזרה למעלה ---
+            if(backToTopBtn) {
+                window.onscroll = function() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        backToTopBtn.style.display = "block";
+                    } else {
+                        backToTopBtn.style.display = "none";
+                    }
+                };
+
+                backToTopBtn.addEventListener('click', function() {
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                });
+            }
+
+            // --- שדרוג 1: קוד להדגשת עמוד פעיל ---
+            const currentPage = window.location.pathname.split("/").pop();
+            const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+            sidebarLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.parentElement.classList.add('active');
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>
